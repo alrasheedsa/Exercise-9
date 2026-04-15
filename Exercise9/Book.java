@@ -29,4 +29,16 @@ public class Book extends Product{
         return (getPrice()-(getPrice() * (10/100.0)));
     }
 
+    @Override
+    public String getBuy1and1Free(){
+        if (getPrice()>=200){
+            return "You will get 1 book for free";
+        } else return "You didn't reach 200 to get free book";
+    }
+
+    @Override
+    public double getPoints(){
+        return (getPrice()*10);
+    }
+
 }
