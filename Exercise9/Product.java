@@ -4,9 +4,7 @@ public abstract class Product {
     private String name;
     private double price;
 
-    public Product(){
-
-    }
+    public Product(){}
 
     public Product(String name, double price) {
         this.name = name;
@@ -31,5 +29,12 @@ public abstract class Product {
 
     // Set getDiscount as abstract to use it athoer classes
     public abstract double getDiscount();
+
+    // Set getBuy1and1Free as abstract to use it another classes
+    public abstract String getBuy1and1Free();
+
+    //another method 
+    public abstract double getPoints();
+
 
 }
