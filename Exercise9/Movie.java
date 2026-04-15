@@ -27,4 +27,14 @@ public class Movie extends Product{
     public double getDiscount() {
         return (getPrice()-(getPrice() * (20/100.0)));
     }
+    @Override
+    public String getBuy1and1Free(){
+        if (getPrice()>=85){
+            return "You will get 1 for free";
+        } else return "You didn't reach 85 to get 1 for free";
+    }
+    @Override
+    public double getPoints(){
+        return (getPrice()*20);
+    }
 }
