@@ -7,12 +7,25 @@ public class Main {
         // Absctraction
 
         //Test class "Book" that extend fro m Product, then assaign values to get discount based on this class
-        Book b1 = new Book("Mohammed",100.0,"ahmed");
-        System.out.println(b1.getDiscount());
+        Book b1 = new Book("Test",250.0,"ahmed");
+        System.out.println("After Discount : "+b1.getDiscount());
+
+
+        System.out.println(b1.getBuy1and1Free()); //one more method with different class
+
+        System.out.println("You have gain : "+b1.getPoints()+" Point"); // second method for calculate point with different classes
+
 
         //Test Movie "Book" that extend from Product, then assaign values to get discount based on this class
-        Movie m1=new Movie("Saad",250,"Abdulaziz");
-        System.out.println(m1.getDiscount());
+        Movie m1=new Movie("test",70,"Abdulaziz");
+        System.out.println("\nAfter Discount : "+m1.getDiscount());
+
+
+        System.out.println("You have gain : "+m1.getPoints()+" Point"); // second method for calculate point with different classes
+
+
+        System.out.println(m1.getBuy1and1Free()); //one more method with different class
+
 
 
 
